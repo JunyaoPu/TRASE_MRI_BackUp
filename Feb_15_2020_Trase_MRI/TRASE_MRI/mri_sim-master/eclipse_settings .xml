@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdtprojectproperties>
+<section name="org.eclipse.cdt.internal.ui.wizards.settingswizards.IncludePaths">
+<language name="CUDA C Source File">
+<includepath workspace_path="true">/${ProjName}/acquisition</includepath>
+<includepath workspace_path="true">/${ProjName}/primitives</includepath>
+<includepath workspace_path="true">/${ProjName}/sequence</includepath>
+<includepath>/usr/local/cuda/lib64/</includepath>
+<includepath>/home/graphics/Dev/external_sources/cub-1.7.4</includepath>
+
+</language>
+<language name="C++ Source File">
+<includepath workspace_path="true">/${ProjName}/acquisition</includepath>
+<includepath workspace_path="true">/${ProjName}/primitives</includepath>
+<includepath workspace_path="true">/${ProjName}/sequence</includepath>
+<includepath>/usr/local/cuda/lib64/</includepath>
+<includepath>/home/graphics/Dev/external_sources/cub-1.7.4</includepath>
+
+</language>
+<language name="C Source File">
+<includepath workspace_path="true">/${ProjName}/acquisition</includepath>
+<includepath workspace_path="true">/${ProjName}/primitives</includepath>
+<includepath workspace_path="true">/${ProjName}/sequence</includepath>
+<includepath>/usr/local/cuda/lib64/</includepath>
+<includepath>/home/graphics/Dev/external_sources/cub-1.7.4</includepath>
+
+</language>
+<language name="Object File">
+
+</language>
+<language name="Assembly Source File">
+
+</language>
+</section>
+<section name="org.eclipse.cdt.internal.ui.wizards.settingswizards.Macros">
+<language name="CUDA C Source File">
+
+</language>
+<language name="C++ Source File">
+
+</language>
+<language name="C Source File">
+
+</language>
+<language name="Object File">
+
+</language>
+<language name="Assembly Source File">
+
+</language>
+</section>
+</cdtprojectproperties>

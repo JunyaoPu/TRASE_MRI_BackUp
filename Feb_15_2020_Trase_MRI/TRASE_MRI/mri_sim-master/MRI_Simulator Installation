@@ -1,0 +1,47 @@
+1	Open up ECLIPSE
+	Set workspace to the directory containing the MRI sim folder.
+
+2	File->New CUDA C/C++ Project
+	Name it something other than the directory containing the files from GitHub
+	Empty project and CUDA toolkit 9.0
+	Select Separate compilation in the next screen
+	Go through the rest and click finish
+
+3	Using terminal/file explorer copy the files from the GitHub download into your the folder 		(will be named after the project name you set in Eclipse)
+
+4	Right click the project and select refresh. All the files should appear now.
+
+5	Select the build configuration as Release
+***************************************************************************************
+Right click the project and select import, then C/C++, then C/C++ project settings and click next.
+Select the file I attached "eclipse_settings.xml"
+Select the configuration as Release. You'll want to repeat all of this again for Debug mode :(.
+Click finish
+
+
+Reconfiguring the project:
+Right click on project, select properties
+Go to C/C++ general/select paths and symbols/includes/CUDA c add /home/junyao/Documents/cub-1.7.4(the "cub-X.X.X" containing directory to your CUB install), click Apply and Yes.
+
+Right click on project, select properties
+Go to Build/Tool Chain Editor. Select your current tool chain version and builder.(nothing to do here)
+
+Right click on project, select properties
+Build/Settings/Tool Settings/NVCC compiler/Code Generation/ Enable C++ support     click apply
+
+Right click on project, select properties
+In Build/Settings/Tool Settings/NVCC Linker/Libraries add a library called "cufft"  click apply
+
+In recorder.h change DIR_REC to your project location or else generated images won't be shown.
+
+Right click the project and select "clean project", this gets rid of any old compilation object files.
+
+right clicking on primitives/old primitives file go to select properties/Build/Settings and click "Exclude resource from build", 
+
+right clicking on main_files file go to select properties/Build/Settings and click "Exclude resource from build", 
+
+
+you may need to change the #include "../sequence.cuh"  and #include "../pulses.cuh" in PGSE.cuh
+
+change the demo_scan_full.cu file
+

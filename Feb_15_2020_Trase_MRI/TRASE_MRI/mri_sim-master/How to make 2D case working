@@ -1,0 +1,15 @@
+how to make 2d case working after fix the k-space issue
+
+
+1 create a excitation pulse in the pulse.cuh and pulse.cu(RFflip_EXC)
+
+2 change the excitation pulse in GRE sequence by RFflip_EXC
+
+3 in sequence,cuh line 176 to line 186 chenged the G +=pulse[pulse_num]->out(time,0,r,0); (it reduced the preformence of the program)
+
+
+
+note: for some reson the single precision only work for pulse lenth greater than 0.5ms
+
+why not working for double precison?
+
